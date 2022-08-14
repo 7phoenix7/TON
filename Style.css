@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+html,body {
+    margin: 0px;
+    background-color: #fff;
+    font-family: mulish;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(35 35 40 / 90%);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    color: white;
+    z-index: 1;
+
+
+}
+
+
+#header {
+
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    max-width: 1150px;
+    margin: auto;
+
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+
+}
+
+#header .right span {
+    font-size: 18;
+    font-weight: 900;
+}
+
+#header svg {
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+#header .left {
+    justify-content: flex-start;
+}
+
+#header .mid {
+    justify-content: center;
+}
+
+#header .right {
+    justify-content: flex-end;
+}
+#header .right a:hover {
+    color: #ffffff1f ;
+}
+
+#header .mid span {
+    padding-left: 20px;
+    font-weight: 800;
+    font-size: 22px;
+    position: relative;
+}
+#header .mid span:hover {
+    color: #ffffff1f;
+    cursor: pointer;
+    
+}
+#header .mid .nav-dropdown {
+    display: none;
+    position: absolute;
+    color: black;
+    padding: 15px;
+    background-color: #fff;
+    z-index: 2;
+}
+#header .mid span:hover .nav-dropdown {
+    /* display: contents; */
+    position: absolute;
+}
+
+.welcome {
+    background-color: #232328;
+    width: 100%;
+    height: 650px;
+}
+
+.welcome article {
+
+    width: 80%;
+    max-width: 1150px;
+    margin: auto;
+    padding-top: 200px;
+    height: 500px;
+    display: flex;
+
+
+}
+
+/* #wel-left {
+    
+    
+    
+} */
+#wel-lft #first {
+    width: 600px;
+    color: #fff;
+    font-size: 70px;
+    line-height: 56px;
+    padding-bottom: 8px;
+    font-weight: 800;
+}
+
+#wel-lft #sec {
+    color: #08c;
+    font-size: 56px;
+    line-height: 56px;
+    padding-bottom: 8px;
+    font-weight: 800;
+    width: 600px;
+
+}
+
+#wel-lft #third {
+    width: 600px;
+    color: #ffffffb3;
+    font-size: 22px;
+    /* padding-bottom: 20px; */
+    margin-bottom: 43px;
+}
+
+#wel-right {
+    width: 450px;
+    height: 400px;
+    display: inline-block;
+    background-image: radial-gradient(circle, rgba(60, 187, 251, .3) 0, rgba(60, 187, 251, .221) 13.11%, rgba(60, 187, 251, .162) 23.46%, rgba(60, 187, 251, .115) 32.43%, rgba(60, 187, 251, .083) 38.985%, rgba(60, 187, 251, .058) 44.85%, rgba(60, 187, 251, .038) 50.37%, rgba(60, 187, 251, .023) 55.338%, rgba(60, 187, 251, .013) 59.409%, rgba(60, 187, 251, .006) 62.79%, rgba(60, 187, 251, .002) 65.688%, rgba(60, 187, 251, .001) 67.758%, rgba(60, 187, 251, 0) 69%);
+    background-size: cover;
+}
+
+.blue-bottom {
+    background-color: #08c;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 25px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.blue-bottom:hover {
+    background-color: #0197e2;
+}
+
+.git-bottom {
+    text-decoration: none;
+    background-color: hsl(0deg 0% 100% / 6%);
+    color: #fff;
+    padding: 16px 25px;
+    margin-left: 20px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.git-bottom:hover {
+    background-color: #ffffff1f;
+}
+.git-bottom svg {
+    padding-right: 10px;
+}
+
+#wel-right {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -60px;
+    width: 600px;
+
+}
+
+#wel-right video {
+    width: 100%;
+    min-width: 300px;
+    transform: translate(30% , 0%);
+}
+#wel-right .shadow-container {
+    width: 100%;
+}
+#wel-right .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 125;
+    width: 250px;
+    height: 30px;
+    background-image: radial-gradient(ellipse,
+            rgba(0, 0, 0, 0.4) 10%,
+            rgba(0, 0, 0, 0) 80%,
+            rgba(68, 88, 101, 0.8) 10%);
+    border-radius: 50%;
+}
+.info {
+    width: 100%;
+    background-color: #fff;
+    max-width: 1150px;
+    margin: auto;
+    padding: 6rem 0rem;
+
+}
+.info .title {
+    font-size: 56px;
+    font-weight: 900;
+    text-align: center;
+    
+    
+}
+.info .description {
+    font-size: 17px;
+    padding-top: 2rem;
+    text-align: center;
+    max-width: 500px;
+    color: #728a96;
+    margin: auto;
+}
+.info .network-info {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    padding-top: 4rem;
+    justify-content: space-between;
+}
+.info .network-info .state {
+    box-sizing: border-box;
+    width: 32%;
+    background-color: #ecf0f3cc;
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.info .network-info .state .state-title {
+    padding-bottom: 8PX;
+    font-size: 18PX;
+}
+.info .network-info .state .state-count {
+    font-size: 24px;
+    font-weight: bold;  
+}
+.info .network-info .state img {
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translate(30% , -50%);
+    opacity: 0.1;
+    z-index: 0;
+}
+.info .network-info .state .state-title , .state-count {
+    position: relative;
+    z-index: 1;
+}
+.coin {
+    width: 1250px;
+    margin: auto;
+    background-color: #ecf0f3cc;
+    border-radius: 100px;
+}
+.coin .coin-content {
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+.coin .coin-content .coin-info {
+    width: 45%;
+    
+}
+.coin .coin-content .coin-info .coin-ton span {
+    padding: 4px 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.coin .coin-content .coin-info .coin-title {
+    font-size: 56px;
+    font-weight: 900;
+    padding: 15px 0px;
+}
+.coin .coin-content .coin-info .coin-description {
+    font-size: 20px;
+    color: #728a96;
+    padding: 2rem 0rem;
+    margin-bottom: 1rem;
+}
+.coin .coin-content .coin-info .coin-links a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+    color: #08c;
+    margin: 8px;
+}
+.coin .coin-content .coin-pic{
+    
+    width: 55%;
+}
+.coin .coin-content .coin-pic img {
+    width: 100%;
+}
+.timeline {
+    max-width: 1150px;
+    margin: auto;
+    padding: 5rem 0rem;
+}
+.timeline .timeline-header {
+    font-size: 56px;
+    font-weight: bold;
+    padding: 2rem 0rem;
+}
+.timeline .timeline-container {
+    display: flex;
+    justify-content: space-between;
+    
+    position: relative;
+}
+.timeline .timeline-container .container-part {
+    width: 30%;
+}
+.timeline .timeline-container .container-part .timeline-title {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 1rem 0rem;
+}
+.timeline .timeline-container .container-part .timeline-description {
+    font-size: 20px;
+    color: #728a96;
+    padding: 2rem 0rem;
+}
+.timeline .timeline-container .container-part a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+    color: #08c;
+    margin: 8px;
+}
+.timeline .timeline-border {
+    display: flex;
+    position: relative;
+
+}
+.timeline .timeline-border .dot-border {
+    border-top: 3px solid rgba(0,136,204,0.22);
+    width: 35%;
+    
+}
+.timeline .timeline-border .dash-border {
+    border-top: 3px dashed rgba(0,136,204,0.22);
+    width: 35%;
+}
+.timeline .timeline-border .smal-dot {
+    position: absolute;
+    background-color: #0197e2;
+    padding: 4px;
+    border-radius: 4px;
+    transform: translate(0px , -75%);
+}
+.timeline .timeline-border .medium-dot .smal-dot {
+    background-color: #fff;
+    transform: translate(-4px , -45%);
+}
+.timeline .timeline-border .medium-dot {
+    position: absolute;
+    background-color: #0197e2;
+    padding: 13px;
+    border-radius: 13px;
+    transform: translate(0px , -75%);
+    z-index: 1;
+}
+.blockchain {
+    width: 100%;
+    background-color: #fff;
+    max-width: 1150px;
+    margin: auto;
+    padding: 3rem 0rem;
+}
+.blockchain .blockchain-title {
+    font-size: 56px;
+    font-weight: 900;
+    text-align: center;
+    
+    
+}
+.blockchain .blockchain-description {
+    font-size: 20px;
+    padding-top: 2rem;
+    text-align: center;
+    max-width: 900px;
+    color: #728a96;
+    margin: auto;
+    padding: 2rem 0;
+}
+.blockchain .blockchain-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.table {
+    width: 1150px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    border: 5px solid rgba(0,136,204,0.06);
+    border-radius: 75px;
+   padding: 25px 110px;
+}
+.table table {
+    
+    width: 100%;
+    
+    border-collapse: collapse;
+}
+.table table .column-first {
+    font-size: 20px;
+    font-weight: bold;
+    width: 34%;
+    padding: 20px;
+    
+}
+.table table .column-secend {
+    text-align: center;
+    font-size: 20px;
+    background-color:rgba(0,136,204,0.06) ;
+    width: 22%;
+    
+}
+.table table .column-last {
+    text-align: center;
+    width: 22%;
+    font-size: 20px;
+}
+.table table tr th img {
+    padding: 12px;
+}
+
+.top-redius {
+    border-radius: 30px 30px 0px 0px;
+    padding-top: 12px;
+}
+.bot-redius {
+    border-radius: 0px 0px 30px 30px;
+}
+.free {
+    height: 1000px;
+    background-color: aliceblue;
+}

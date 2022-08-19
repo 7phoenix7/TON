@@ -10,6 +10,11 @@ html,body {
     width: 100%;
     box-sizing: border-box;
 }
+.container {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+}
 
 nav {
     background-color: rgb(35 35 40 / 90%);
@@ -17,8 +22,8 @@ nav {
     height: 70px;
     position: fixed;
     color: white;
-    z-index: 1;
-    overflow: hidden;
+    z-index: 3;
+    /* overflow: hidden; */
 
 }
 
@@ -31,8 +36,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     /* flex-wrap: wrap; */
-    width: 80%;
-    max-width: 1150px;
+    
+    max-width: 1040px;
     margin: auto;
 
 }
@@ -86,12 +91,13 @@ nav {
     color: black;
     padding: 15px;
     background-color: #fff;
-    z-index: 2;
+    
 }
-#header .mid span:hover .nav-dropdown {
-    /* display: contents; */
+ #header .mid span:hover .nav-dropdown {
+    display: block  ;
     position: absolute;
-}
+    z-index: 4;
+} 
 
 .welcome {
     background-color: #232328;
@@ -102,8 +108,8 @@ nav {
 
 .welcome article {
 
-    width: 80%;
-    max-width: 1150px;
+    
+    max-width: 1040px;
     margin: auto;
     padding-top: 200px;
     height: 500px;
@@ -214,7 +220,7 @@ nav {
 .info {
     width: 100%;
     background-color: #fff;
-    max-width: 1150px;
+    max-width: 1040px;
     margin: auto;
     padding: 6rem 0rem;
 
@@ -235,7 +241,7 @@ nav {
     margin: auto;
 }
 .info .network-info {
-    max-width: 1150px;
+    max-width: 1040px;
     margin: auto;
     display: flex;
     padding-top: 4rem;
@@ -280,7 +286,7 @@ nav {
     
 }
 .coin .coin-content {
-    max-width: 1150px;
+    max-width: 1040px;
     margin: auto;
     padding: 20px 0px;
     display: flex;
@@ -322,7 +328,7 @@ nav {
     width: 100%;
 }
 .timeline {
-    max-width: 1150px;
+    max-width: 1040px;
     margin: auto;
     padding: 5rem 0rem;
 }
@@ -394,7 +400,7 @@ nav {
 .blockchain {
     width: 100%;
     background-color: #fff;
-    max-width: 1150px;
+    max-width: 1040px;
     margin: auto;
     padding: 3rem 0rem;
 }
@@ -421,7 +427,7 @@ nav {
 }
 .table {
     width: 100%;
-    max-width:1150px ;
+    max-width:1040px ;
     margin: 2rem auto;
     display: flex;
     justify-content: center;
@@ -458,13 +464,111 @@ nav {
 .table table tr th img {
     padding: 12px;
 }
-
+ .table-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #728a96 ;
+    padding-bottom: 3rem;
+}
+.table-footer a {
+    color: #728a96 ;
+    
+}
 .top-redius {
     border-radius: 30px 30px 0px 0px;
     padding-top: 12px;
 }
 .bot-redius {
     border-radius: 0px 0px 30px 30px;
+}
+.developer {
+    background-image: linear-gradient(0deg,#232328,#343437 101.47%);
+    padding: 5rem;
+    width: 100%;
+}
+.developer .developer-header {
+    
+    text-align: center;
+}
+.developer .developer-header h3 {
+    font-size: 56px;
+    color: #fff;
+    padding: 2rem 0;
+    margin: 0;
+
+}
+.developer .developer-header p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 20px;
+    color: hsla(0,0%,100%,0.7);
+}
+.developer .developer-header .developer-bottoms {
+    margin: 3rem;
+}
+.developer .developer-description {
+    box-shadow: 0 4px 24px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    border-radius: 30px;
+}
+.developer .developer-description .description-header {
+    background-color: #1c1c1e66;
+    padding: 1rem 3rem ;
+    border-radius:10px 10px 0px 0px ;
+    
+}
+.developer .developer-description .description-header .circle-maker {
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+.developer .developer-description .description-body {
+    background: rgba(255,255,255,.03);
+    display: flex;
+    padding: 3rem 0rem;
+}
+.developer .developer-description .description-body .body-sidebar {
+    width: 25%;
+}
+.developer .developer-description .description-body .body-sidebar .sidebar-item {
+    color: #fff;
+    padding: 1rem 3rem;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* .developer .developer-description .description-body .body-sidebar .sidebar-item::after {
+    content: "";
+    height: 100%;
+    background-color: #728a96;
+    width: 1px;
+} */
+.developer .developer-description .description-body .body-Contents {
+width: 75%;
+color: #fff;
+font-family: "IBM Plex Mono", monospace;
+padding: 0rem 3rem;
+}
+
+.developer .developer-description .description-body .body-Contents .main-content .content-title {
+    padding: 1rem 0rem;
+font-size:  30px;
+font-weight: bold;
+}
+.developer .developer-description .description-body .body-Contents .main-content .content-description{
+    font-size: 20px;
+}
+.developer .developer-description .description-body .body-Contents .main-content .iner-link{
+color: #fff;
 }
 .free {
     height: 1000px;

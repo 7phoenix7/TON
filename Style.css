@@ -795,13 +795,28 @@ text-underline-offset: 0.3rem;
     width: 30%;
     text-decoration: none;
 }
+
+.everyone .everyone-steps .step:hover .image {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+
+}
 .everyone .everyone-steps .step .image {
     width: 100%;
-    padding-bottom: 1rem ;
+    
     background-size: cover;
     height: 154px;
     border-radius: 20px;
+    transition-duration: 500ms;
 }
+.everyone .everyone-steps .step .image-box {
+    width: 100%;
+    padding-bottom: 1rem ;
+    height: 154px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .everyone .everyone-steps .step .step-title {
     font-size: 22px;
     font-weight: bold;
@@ -820,6 +835,48 @@ text-underline-offset: 0.3rem;
     font-weight: bold;
     font-size: 20px;
     color:#08c;
+}
+.footer {
+    padding: 3rem 0;
+}
+.footer .footer-content {
+    display: flex;
+    padding: 10px 0;
+}
+.footer .footer-content .footer-column {
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+}
+.footer .footer-content .footer-column:first-child{
+    width: 20%;
+}
+.footer .footer-content .footer-column:first-child a {
+    transform: translate(0% , -31%);
+}
+.footer .footer-content .footer-column:first-child a , span{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+.footer .footer-content .footer-column a {
+    text-decoration: none;
+    padding: 5px 0;
+    margin: 3px 0;
+    color: #728a96;
+    font-size: 15px;
+}
+.footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: #728a96;
+    align-items: center;
+    padding: 1rem 0;
+}
+.footer .footer-bottom a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 5px;
 }
 .free {
     height: 1000px;

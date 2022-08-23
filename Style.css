@@ -854,7 +854,7 @@ text-underline-offset: 0.3rem;
 .footer .footer-content .footer-column:first-child a {
     transform: translate(0% , -31%);
 }
-.footer .footer-content .footer-column:first-child a , span{
+.footer .footer-content .footer-column:first-child a , .footer .footer-content span{
     color: black;
     font-weight: bold;
     font-size: 18px;
